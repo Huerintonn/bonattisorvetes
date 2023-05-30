@@ -141,7 +141,7 @@ body {
 
 
 .pg4 {
-    margin: 50px auto;
+    margin:auto;
     text-align: center;
 
 }
@@ -199,6 +199,13 @@ body {
 
 }
 
+@media screen and (max-width: 1080px) {
+    .top_texto {
+        width: 80%;
+
+    }
+
+}
 
 @media screen and (max-width: 850px) {
     .conteudo_card {
@@ -219,29 +226,6 @@ body {
         
     }
 
-    
-}
-
-@media screen and (max-width: 450px) {
-    .conteudo_card {
-        width: 203px;
-        height: 310px;
-        margin: 10px 10px;
-
-         
-     }
-
-     .conteudo_card img {
-        width: 203px;
-        height: 310px;
-    }
-
-    .texto_card {
-        border-radius: 30px;
-        
-    }
-
-    
 }
 
 @media screen and (max-width: 700px) {
@@ -261,6 +245,60 @@ body {
         gap: 10px;
         margin: 10px 10px;
     }
+
+    .pg4 {
+        margin: 0 50px;
+    }
+
+    .pg4 h3{
+        font-size: 20px;
+    }
+
+    .img_bot {
+        width: 60%;
+    }
     
 
 }
+
+@media screen and (max-width: 450px) {
+
+    .top_texto {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .conteudo_card {
+        width: 203px;
+        height: 310px;
+        margin: 10px 10px;       
+     }
+
+     .conteudo_card img {
+        width: 203px;
+        height: 310px;
+    }
+
+    .texto_card {
+
+        border-radius: 30px;
+    }
+
+    .texto_card p{
+        font-size: 16px;
+              
+    }
+
+    .texto_card h2{
+        font-size: 17px;
+       
+    }
+
+    .top_texto {
+        font-size: 16;
+        width: 90%;
+    }  
+      
+}
+
