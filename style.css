@@ -1,0 +1,266 @@
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(circle at center, rgb(182, 30, 42), rgb(148, 4, 16));
+    color: white;
+}
+
+/* Topo */
+.top_image {
+    width: 100%;
+  }
+
+
+.pg1 {
+    margin: 50px auto;
+}
+
+.top_texto {
+    font-size: 25px; 
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.curve {
+    margin:70px auto;
+    text-align: center;
+}
+
+/* Cards de imagens */
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_card {
+    width: 395px;
+    height: 570px;
+    border-radius: 50px;
+    margin: 10px 10px;
+    transition: 1s;
+}
+
+.conteudo_card:hover {
+    text-align: center;
+    transform: scale(1.05)
+}
+
+.texto_card {
+    visibility: hidden;
+    position: absolute;
+    color: #ffffff;
+    width: inherit;
+    height: inherit;
+    border-radius: 50px;
+    background-color: rgba(139, 36, 93, 0.8)
+}
+
+.texto_card h2 {
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 20% 10% 10% 5%;
+    padding: 5px
+}
+.texto_card p {
+    text-align:center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conteudo_card:hover .texto_card {
+    visibility: visible;
+}
+
+.cards_redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+/* Contatos e endereço */
+
+.pg3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.botao_contato {
+    align-items: center;
+    display: flex;
+    padding: 0.3em 3em;
+    background-color: #ffffff;
+    border-radius: 20px;
+    gap: 10px;
+    margin: auto 10px;
+}
+
+.botao_contato, a {
+    text-decoration: none;
+    color: #ac353c;
+}
+
+.texto_contato {
+    font-size: 25px;
+}
+
+.icon_contato {
+    height:fit-content;
+}
+
+.botao_contato:hover {
+    background-color: #ac353c;
+    color: white;
+}
+
+.botao_contato:hover img {
+    filter: brightness(100);
+}
+
+.redes_icon {
+    padding: 20px 0;
+    margin: 0 5px;
+    cursor: pointer;
+    filter: brightness(100);
+}
+
+.redes_icon:hover {
+    filter: brightness(1);
+}
+
+
+.pg4 {
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.pg4 a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.pg4 a:hover{
+    color: #f7e7ca;
+}
+
+
+
+.rodape {
+    text-align: center;
+
+}
+
+.rodape  a{
+    color: #ffffff;
+}
+
+.rodape  a:hover{
+    color: #f7e7ca;
+}
+
+.imagem_rodape {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.img_bot {
+    width: 40%;
+
+}
+
+
+/* Responsividade*/
+
+@media screen and (max-width: 1660px) {
+   
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .conteudo_card {
+       margin: 10px 10px;
+       
+    }    
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .conteudo_card {
+        width: 263px;
+        height: 370px;
+        margin: 10px 10px;
+
+         
+     }
+
+     .conteudo_card img {
+        width: 263px;
+        height: 370px;
+    }
+
+    .texto_card {
+        border-radius: 35px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .conteudo_card {
+        width: 203px;
+        height: 310px;
+        margin: 10px 10px;
+
+         
+     }
+
+     .conteudo_card img {
+        width: 203px;
+        height: 310px;
+    }
+
+    .texto_card {
+        border-radius: 30px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+    .pg3 {
+        display: block;
+        justify-content: center;
+    
+    }
+
+    .botao_contato {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0.3em 3em;
+        background-color: #ffffff;
+        border-radius: 20px;
+        gap: 10px;
+        margin: 10px 10px;
+    }
+    
+
+}
